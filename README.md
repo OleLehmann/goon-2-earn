@@ -1,4 +1,4 @@
-![Goon 2 Earn banner](/public/twitter_card.jpg)
+<img width="1270" height="754" alt="Screenshot 2026-05-25 at 2 09 03 PM" src="https://github.com/user-attachments/assets/bc90632f-5bea-4413-bf93-a186c6bf6a52" /><img width="1267" height="754" alt="Screenshot 2026-05-25 at 2 09 22 PM" src="https://github.com/user-attachments/assets/b0a4961a-94e5-4764-a303-0778a7a54ca8" />
 
 **Automate rewarding contributors with a slice of ownership over a project and its earnings, when pull requests are merged. Welcome to Goon 2 Earn.**
 
