@@ -6,7 +6,6 @@
 ## Install
 
 1. [Install Goon 2 Earn](https://github.com/OleLehmann/goon-2-earn/installations/new/) Github app on one or more repositories  
-2. Initialize the app for each repo on [g2e.slice.so](https://g2e.slice.so) by following the [setup process](#setup-process)
 
 ### Setup process
 
@@ -15,7 +14,7 @@ Goon 2 Earn (G2E) relies on:
 - A [Slicer](https://slice.so), to split the project's ownership and earnings among multiple contributors;
 - A [Gnosis Safe](https://gnosis-safe.io/app), typically owned by the project's maintainers, to execute rewards distributions.
 
-The setup process is carried out on [g2e.slice.so](https://g2e.slice.so) by someone who is both owner of the repo and the safe related to the project. It consists in:
+The setup process is carried out by someone who is both owner of the repo and the safe related to the project. It consists in:
 
 1. Delegating G2E to propose transactions on the appointed safe;
 2. Creating a slicer to represent the project.
@@ -61,7 +60,7 @@ Everything is handled transparently on-chain, while Github settings and permissi
 - Each PR has a pinned G2E comment showing the scheduled slice distribution.
 - Contributors can manage their slices and withdraw any earnings on [slice.so](https://slice.so). Slices are ERC1155 tokens so they can also be managed on the owner's ETH wallet and can be freely transferred (learn more on [slice.so](https://slice.so)).
 - If a PR is merged while previous mint proposals haven’t been executed, **a new transaction will be proposed which includes all pending queued mints under the same nonce**. It is thus possible to combine multiple proposals in a single transaction by executing the latest transaction proposed by G2E on a safe for each nonce.
-- When a slicer is created on [g2e.slice.so](https://g2e.slice.so), the appointed Gnosis Safe becomes its controller and is able to **mint or burn new slices** or sell products on the slicer's decentralized store.
+- When a slicer is created, the appointed Gnosis Safe becomes its controller and is able to **mint or burn new slices** or sell products on the slicer's decentralized store.
 - The max total number of slices that can be created for a project is 4B. See below the suggestion on [how to quantify slices as reward](#how-many-slices-to-give-when-merging-prs).
 
 ## Suggestions for maintainers
@@ -115,10 +114,8 @@ Even then, the attacker cannot retroactively steal past earnings—only future o
 
 ## Learn more
 
-- [Goon 2 Earn - website](https://g2e.slice.so)
 - [Slice protocol](https://slice.so)
-- [Support (Discord)](https://discord.gg/c7puDHjgMU)
 
 ## Contributing
 
-This project uses Goon 2 Earn to reward contributors with a piece of the [Goon 2 Earn slicer](https://slice.so/slicer/23) and its earnings, when pull requests are merged.
+This project uses Goon 2 Earn to reward contributors and its earnings.
